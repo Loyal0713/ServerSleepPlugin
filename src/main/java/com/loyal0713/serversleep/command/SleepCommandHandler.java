@@ -28,7 +28,7 @@ public class SleepCommandHandler implements CommandExecutor, TabCompleter {
         String argument = args[0].toLowerCase();
 
         if (argument.equals("reload")) {
-            plugin.loadSleepPercentage();
+            plugin.loadConfig();
             sender.sendMessage("ServerSleep config reloaded. Sleep percentage: " + plugin.getSleepPercentage() + "%");
             return true;
         }

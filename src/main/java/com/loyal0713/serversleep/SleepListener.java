@@ -29,9 +29,7 @@ public class SleepListener implements Listener {
     @EventHandler
     public void onPlayerQuit(PlayerQuitEvent event) {
         Player player = event.getPlayer();
-        if (!player.isSleeping()) {
-            return;
-        }
+        if (!player.isSleeping()) return;
         final World world = player.getWorld();
         plugin.getServer().getScheduler().runTask(plugin, new Runnable() {
             @Override

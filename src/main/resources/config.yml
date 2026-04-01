@@ -1,6 +1,13 @@
 # Percentage of non-spectator players that must be sleeping to skip the night.
-# Valid range: 0-100
-# 100 = all players must sleep (vanilla default)
-# 50  = half of players must sleep
-# 1   = a single player can skip the night
+# Valid range: 0-100  |  100 = all players (vanilla default)  |  1 = anyone can skip
 sleep-percentage: 100
+
+# Message broadcast to the world when night is skipped. Supports & color codes.
+# Leave empty ("") to send no message.
+skip-message: "&6Night has been skipped! Good morning."
+
+# Clear rain/thunder when night is skipped (only fires if doWeatherCycle is on).
+clear-weather: true
+
+# Reset each sleeping player's phantom timer when night is skipped (1.13+).
+reset-phantoms: true
