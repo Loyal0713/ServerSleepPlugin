@@ -1,0 +1,810 @@
+diff --git a/.gitignore b/.gitignore
+index 67bcc2f..3c37caf 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1,2 +1,118 @@
+-.gradle/
++# User-specific stuff
++.idea/
++
++*.iml
++*.ipr
++*.iws
++
++# IntelliJ
++out/
++# mpeltonen/sbt-idea plugin
++.idea_modules/
++
++# JIRA plugin
++atlassian-ide-plugin.xml
++
++# Compiled class file
++*.class
++
++# Log file
++*.log
++
++# BlueJ files
++*.ctxt
++
++# Package Files #
++*.jar
++*.war
++*.nar
++*.ear
++*.zip
++*.tar.gz
++*.rar
++
++# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
++hs_err_pid*
++
++*~
++
++# temporary files which can be created if a process still has a handle open of a deleted file
++.fuse_hidden*
++
++# KDE directory preferences
++.directory
++
++# Linux trash folder which might appear on any partition or disk
++.Trash-*
++
++# .nfs files are created when an open file is removed but is still being accessed
++.nfs*
++
++# General
++.DS_Store
++.AppleDouble
++.LSOverride
++
++# Icon must end with two \r
++Icon
++
++# Thumbnails
++._*
++
++# Files that might appear in the root of a volume
++.DocumentRevisions-V100
++.fseventsd
++.Spotlight-V100
++.TemporaryItems
++.Trashes
++.VolumeIcon.icns
++.com.apple.timemachine.donotpresent
++
++# Directories potentially created on remote AFP share
++.AppleDB
++.AppleDesktop
++Network Trash Folder
++Temporary Items
++.apdisk
++
++# Windows thumbnail cache files
++Thumbs.db
++Thumbs.db:encryptable
++ehthumbs.db
++ehthumbs_vista.db
++
++# Dump file
++*.stackdump
++
++# Folder config file
++[Dd]esktop.ini
++
++# Recycle Bin used on file shares
++$RECYCLE.BIN/
++
++# Windows Installer files
++*.cab
++*.msi
++*.msix
++*.msm
++*.msp
++
++# Windows shortcuts
++*.lnk
++
++.gradle
+ build/
++
++# Ignore Gradle GUI config
++gradle-app.setting
++
++# Cache of project
++.gradletasknamecache
++
++**/build/
++
++# Common working directory
++run/
++
++# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
++!gradle-wrapper.jar
+diff --git a/CODE_OF_CONDUCT.md b/CODE_OF_CONDUCT.md
+deleted file mode 100644
+index 677692f..0000000
+--- a/CODE_OF_CONDUCT.md
++++ /dev/null
+@@ -1,128 +0,0 @@
+-# Contributor Covenant Code of Conduct
+-
+-## Our Pledge
+-
+-We as members, contributors, and leaders pledge to make participation in our
+-community a harassment-free experience for everyone, regardless of age, body
+-size, visible or invisible disability, ethnicity, sex characteristics, gender
+-identity and expression, level of experience, education, socio-economic status,
+-nationality, personal appearance, race, religion, or sexual identity
+-and orientation.
+-
+-We pledge to act and interact in ways that contribute to an open, welcoming,
+-diverse, inclusive, and healthy community.
+-
+-## Our Standards
+-
+-Examples of behavior that contributes to a positive environment for our
+-community include:
+-
+-* Demonstrating empathy and kindness toward other people
+-* Being respectful of differing opinions, viewpoints, and experiences
+-* Giving and gracefully accepting constructive feedback
+-* Accepting responsibility and apologizing to those affected by our mistakes,
+-  and learning from the experience
+-* Focusing on what is best not just for us as individuals, but for the
+-  overall community
+-
+-Examples of unacceptable behavior include:
+-
+-* The use of sexualized language or imagery, and sexual attention or
+-  advances of any kind
+-* Trolling, insulting or derogatory comments, and personal or political attacks
+-* Public or private harassment
+-* Publishing others' private information, such as a physical or email
+-  address, without their explicit permission
+-* Other conduct which could reasonably be considered inappropriate in a
+-  professional setting
+-
+-## Enforcement Responsibilities
+-
+-Community leaders are responsible for clarifying and enforcing our standards of
+-acceptable behavior and will take appropriate and fair corrective action in
+-response to any behavior that they deem inappropriate, threatening, offensive,
+-or harmful.
+-
+-Community leaders have the right and responsibility to remove, edit, or reject
+-comments, commits, code, wiki edits, issues, and other contributions that are
+-not aligned to this Code of Conduct, and will communicate reasons for moderation
+-decisions when appropriate.
+-
+-## Scope
+-
+-This Code of Conduct applies within all community spaces, and also applies when
+-an individual is officially representing the community in public spaces.
+-Examples of representing our community include using an official e-mail address,
+-posting via an official social media account, or acting as an appointed
+-representative at an online or offline event.
+-
+-## Enforcement
+-
+-Instances of abusive, harassing, or otherwise unacceptable behavior may be
+-reported to the community leaders responsible for enforcement at
+-levi.muniz17@gmail.com.
+-All complaints will be reviewed and investigated promptly and fairly.
+-
+-All community leaders are obligated to respect the privacy and security of the
+-reporter of any incident.
+-
+-## Enforcement Guidelines
+-
+-Community leaders will follow these Community Impact Guidelines in determining
+-the consequences for any action they deem in violation of this Code of Conduct:
+-
+-### 1. Correction
+-
+-**Community Impact**: Use of inappropriate language or other behavior deemed
+-unprofessional or unwelcome in the community.
+-
+-**Consequence**: A private, written warning from community leaders, providing
+-clarity around the nature of the violation and an explanation of why the
+-behavior was inappropriate. A public apology may be requested.
+-
+-### 2. Warning
+-
+-**Community Impact**: A violation through a single incident or series
+-of actions.
+-
+-**Consequence**: A warning with consequences for continued behavior. No
+-interaction with the people involved, including unsolicited interaction with
+-those enforcing the Code of Conduct, for a specified period of time. This
+-includes avoiding interactions in community spaces as well as external channels
+-like social media. Violating these terms may lead to a temporary or
+-permanent ban.
+-
+-### 3. Temporary Ban
+-
+-**Community Impact**: A serious violation of community standards, including
+-sustained inappropriate behavior.
+-
+-**Consequence**: A temporary ban from any sort of interaction or public
+-communication with the community for a specified period of time. No public or
+-private interaction with the people involved, including unsolicited interaction
+-with those enforcing the Code of Conduct, is allowed during this period.
+-Violating these terms may lead to a permanent ban.
+-
+-### 4. Permanent Ban
+-
+-**Community Impact**: Demonstrating a pattern of violation of community
+-standards, including sustained inappropriate behavior,  harassment of an
+-individual, or aggression toward or disparagement of classes of individuals.
+-
+-**Consequence**: A permanent ban from any sort of public interaction within
+-the community.
+-
+-## Attribution
+-
+-This Code of Conduct is adapted from the [Contributor Covenant][homepage],
+-version 2.0, available at
+-https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
+-
+-Community Impact Guidelines were inspired by [Mozilla's code of conduct
+-enforcement ladder](https://github.com/mozilla/diversity).
+-
+-[homepage]: https://www.contributor-covenant.org
+-
+-For answers to common questions about this code of conduct, see the FAQ at
+-https://www.contributor-covenant.org/faq. Translations are available at
+-https://www.contributor-covenant.org/translations.
+\ No newline at end of file
+diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md
+deleted file mode 100644
+index f7561fa..0000000
+--- a/CONTRIBUTING.md
++++ /dev/null
+@@ -1,26 +0,0 @@
+-# How to Contribute
+-
+-## General workflow
+-0. (External contributors only) Create a fork of the repository
+-1. Pull any changes from `main` to make sure you're up-to-date
+-2. Create a branch from `main`
+-    * Give your branch a name that describes your change (e.g. add-scoreboard)
+-    * Focus on one change per branch
+-3. Commit your changes
+-    * Keep your commits small and focused
+-    * Write descriptive commit messages in [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/) format
+-4. When you're ready, create a pull request to `main`
+-   * Keep your PRs small (preferably <300 LOC)
+-   * Format your title in [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/) format
+-   * List any changes made in your description
+-   * Link any issues that your pull request is related to as well
+-
+-### Example:
+-```text
+-Create scoreboard for total points
+-
+-ADDED - Scoreboard displayed in-game at game end  
+-CHANGED - Updated `StorageManager` class to persist scoreboard data
+-```
+-
+-After the pull request has been reviewed, approved, and passes all automated checks, it will be merged into main.
+\ No newline at end of file
+diff --git a/README.md b/README.md
+deleted file mode 100644
+index cb084bf..0000000
+--- a/README.md
++++ /dev/null
+@@ -1,228 +0,0 @@
+-# PaperMC/Spigot Minecraft Server Plugin Template
+-A template for building PaperMC/Spigot Minecraft server plugins!
+-
+-<!-- TODO: CHANGE ME -->
+-[![Test and Release](https://github.com/CrimsonWarpedcraft/plugin-template/actions/workflows/main.yml/badge.svg)](https://github.com/CrimsonWarpedcraft/plugin-template/actions/workflows/main.yml)
+-
+-<!-- TODO: CHANGE ME -->
+-[![](https://dcbadge.limes.pink/api/server/5XMmeV6EtJ)](https://discord.gg/5XMmeV6EtJ)
+-
+-## Features
+-### Github Actions 🎬
+-* Automated builds, testing, and release drafting
+-* [Discord notifcations](https://github.com/marketplace/actions/discord-message-notify) for snapshots and releases
+-
+-### Bots 🤖
+-* **Probot: Stale**
+-    * Mark issues stale after 30 days
+-* **Dependabot**
+-    * Update GitHub Actions workflows
+-    * Update Gradle dependencies
+-
+-### Issue Templates 📋
+-* Bug report template
+-* Feature request template
+-
+-### Gradle Builds 🏗
+-* Shadowed [PaperLib](https://github.com/PaperMC/PaperLib) build
+-* [Checkstyle](https://checkstyle.org/) Google standard style check
+-* [SpotBugs](https://spotbugs.github.io/) code analysis
+-* [JUnit](https://junit.org/) testing
+-
+-### Config Files 📁
+-* Sample plugin.yml with autofill name, version, and main class.
+-* Empty config.yml (just to make life \*that\* much easier)
+-* Gradle build config
+-* Simple .gitignore for common Gradle files
+-
+-## Usage
+-In order to use this template for yourself, there are a few things that you will need to keep in mind.
+-
+-### Release Info
+-#### PaperMC Version Mapping
+-Here's a list of the PaperMC versions and the versions of this latest compatible version.
+-
+-| PaperMC | ExamplePlugin |
+-|---------|---------------|
+-| 1.21.11 | 4.0.18+       |
+-| 1.21.10 | 4.0.17        |
+-| 1.21.8  | 4.0.16        |
+-| 1.21.7  | 4.0.15        |
+-| 1.21.6  | 4.0.14        |
+-| 1.21.5  | 4.0.12        |
+-| 1.21.4  | 4.0.7         |        
+-| 1.21.3  | 4.0.3         |
+-| 1.21.1  | 4.0.2         |
+-| 1.21    | 3.12.1        |
+-| 1.20.6  | 3.11.0        |
+-| 1.19.4  | 3.2.1         |
+-| 1.18.2  | 3.0.2         |
+-| 1.17.1  | 2.2.0         |
+-| 1.16.5  | 2.1.2         |
+-
+-This chart would make more sense if this plugin actually did anything and people would have a reason
+-to be looking for older releases to run on older servers.
+-
+-To use this as a template, just use the latest version of this project and update the PaperMC
+-version as needed. See more info on release stability below.
+-
+-#### Release and Versioning Strategy
+-Stable versions of this repo are tagged `vX.Y.Z` and have an associated [release](https://github.com/CrimsonWarpedcraft/plugin-template/releases).
+-
+-Testing versions of this repo are tagged `vX.Y.Z-RC-N` and have an associated [pre-release](https://github.com/CrimsonWarpedcraft/plugin-template/releases).
+-
+-Development versions of this repo are pushed to the master branch and are **not** tagged.
+-
+-| Event             | Plugin Version Format | CI Action                        | GitHub Release Draft? |
+-|-------------------|-----------------------|----------------------------------|-----------------------|
+-| PR                | yyMMdd-HHmm-SNAPSHOT  | Build and test                   | No                    |
+-| Cron              | yyMMdd-HHmm-SNAPSHOT  | Build, test, and notify          | No                    |
+-| Push to `main`    | 0.0.0-SNAPSHOT        | Build, test, release, and notify | No                    |
+-| Tag `vX.Y.Z-RC-N` | X.Y.Z-SNAPSHOT        | Build, test, release, and notify | Pre-release           |
+-| Tag `vX.Y.Z`      | X.Y.Z                 | Build, test, release, and notify | Release               |
+-
+-### Discord Notifications
+-In order to use Discord notifications, you will need to create two GitHub secrets. `DISCORD_WEBHOOK_ID` 
+-should be set to the id of your Discord webhook. `DISCORD_WEBHOOK_TOKEN` will be the token for the webhook.
+-
+-You can find these values by copying the Discord Webhook URL:  
+-`https://discord.com/api/webhooks/<DISCORD_WEBHOOK_ID>/<DISCORD_WEBHOOK_TOKEN>`
+-
+-Optionally, you can also configure `DISCORD_RELEASE_WEBHOOK_ID` and `DISCORD_RELEASE_WEBHOOK_TOKEN`
+-to send release announcements to a separate channel.
+-
+-For more information, see [Discord Message Notify](https://github.com/marketplace/actions/discord-message-notify).
+-
+----
+-
+-**I've broken the rest of the changes up by their files to make things a bit easier to find.**
+-
+----
+-
+-### settings.gradle
+-Update the line below with the name of your plugin.
+-
+-```groovy
+-rootProject.name = 'ExamplePlugin'
+-```
+-
+-### build.gradle
+-Make sure to update the `group` to your package's name in the following section.
+-
+-```groovy
+-group = "com.crimsonwarpedcraft.exampleplugin"
+-```
+-
+-Add any required repositories for your dependencies in the following section.
+-
+-```groovy
+-repositories {
+-    maven {
+-        name 'papermc'
+-        url 'https://papermc.io/repo/repository/maven-public/'
+-        content {
+-            includeModule("io.papermc.paper", "paper-api")
+-            includeModule("io.papermc", "paperlib")
+-            includeModule("net.md-5", "bungeecord-chat")
+-        }
+-    }
+-
+-    mavenCentral()
+-}
+-```
+-
+-Also, update your dependencies as needed (of course).
+-
+-```groovy
+-dependencies {
+-    compileOnly 'io.papermc.paper:paper-api:1.21.6-R0.1-SNAPSHOT'
+-    compileOnly 'com.github.spotbugs:spotbugs-annotations:4.9.3'
+-    implementation 'io.papermc:paperlib:1.0.8'
+-    spotbugsPlugins 'com.h3xstream.findsecbugs:findsecbugs-plugin:1.14.0'
+-    testCompileOnly 'com.github.spotbugs:spotbugs-annotations:4.9.3'
+-    testImplementation 'io.papermc.paper:paper-api:1.21.6-R0.1-SNAPSHOT'
+-    testImplementation 'org.junit.jupiter:junit-jupiter:5.13.1'
+-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.13.1'
+-}
+-```
+-
+-### src/main/resources/plugin.yml
+-First, update the following with your information.
+-
+-```yaml
+-author: AUTHOR
+-description: DESCRIPTION
+-```
+-
+-Next, the `commands` and `permissions` sections below should be updated as needed.
+-
+-```yaml
+-commands:
+-  ex:
+-    description: Base command for EXAMPLE
+-    usage: "For a list of commands, type /ex help"
+-    aliases: example
+-permissions:
+-  example.test:
+-    description: DESCRIPTION
+-    default: true
+-  example.*:
+-    description: Grants all other permissions
+-    default: false
+-    children:
+-      example.test: true
+-```
+-
+-### .github/dependabot.yml
+-You will need to replace all instances of `leviem1`, such as the one below, with your GitHub
+-username.
+-
+-```yaml
+-reviewers:
+-  - "leviem1"
+-```
+-
+-### .github/CODEOWNERS
+-You will need to replace `leviem1`, with your GitHub username.
+-
+-```text
+-*   @leviem1
+-```
+-
+-### .github/FUNDING.yml
+-Update or delete this file, whatever applies to you.
+-
+-```yaml
+-github: leviem1
+-```
+-
+-For more information see: [Displaying a sponsor button in your repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository)
+-
+-### CODE_OF_CONDUCT.md
+-If you chose to adopt a Code of Conduct for your project, please update line 63 with your preferred
+-contact method.
+-
+-## Creating a Release
+-Below are the steps you should follow to create a release.
+-
+-1. Create a tag on `main` using semantic versioning (e.g. v0.1.0)
+-2. Push the tag and get some coffee while the workflows run
+-3. Publish the release draft once it's been automatically created
+-
+-## Building locally
+-Thanks to [Gradle](https://gradle.org/), building locally is easy no matter what platform you're on. Simply run the following command:
+-
+-```text
+-./gradlew build
+-```
+-
+-This build step will also run all checks and tests, making sure your code is clean.
+-
+-JARs can be found in `build/libs/`.
+-
+-## Contributing
+-See [CONTRIBUTING.md](https://github.com/CrimsonWarpedcraft/plugin-template/blob/main/CONTRIBUTING.md).
+-
+----
+-
+-I think that's all... phew! Oh, and update this README! ;)
+diff --git a/build.gradle b/build.gradle
+index e722c1b..56552c9 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -1,142 +1,40 @@
+-import com.github.spotbugs.snom.SpotBugsTask
+-import java.text.SimpleDateFormat
+-
+ plugins {
+-    id 'checkstyle'
+-    id "com.github.spotbugs" version "6.4.8"
+-    id 'com.gradleup.shadow' version '9.4.0'
+     id 'java'
++    id 'xyz.jpenilla.run-paper' version '2.3.1'
+ }
+ 
+-group = "com.crimsonwarpedcraft.exampleplugin"
+-
+-static def getTime() {
+-    SimpleDateFormat sdf = new SimpleDateFormat("yyMMdd-HHmm")
+-    sdf.setTimeZone(TimeZone.getTimeZone("UTC"))
+-    return sdf.format(new Date()).toString()
+-}
+-
+-// Set version to version property if supplied
+-String shortVersion = null
+-if (hasProperty('ver')) {
+-    if (ver.charAt(0) == "v") {
+-        shortVersion = ver.substring(1).toUpperCase()
+-    } else {
+-        shortVersion = ver.toUpperCase()
+-    }
+-}
+-
+-// If the tag includes "-RC-" or no tag is supplied, append "-SNAPSHOT"
+-int rcIdx
+-if (shortVersion == null || shortVersion == "") {
+-    version = getTime() + "-SNAPSHOT"
+-} else if ((rcIdx = shortVersion.indexOf("-RC-")) != -1) {
+-    version = shortVersion.substring(0, rcIdx) + "-SNAPSHOT"
+-} else {
+-    version = shortVersion
+-}
+-
+-java {
+-    sourceCompatibility = JavaVersion.VERSION_21
+-    targetCompatibility = JavaVersion.VERSION_21
+-}
++group = 'com.loyal0713'
++version = '1.0.0'
+ 
+ repositories {
+     maven {
+-        name = 'papermc'
+-        url = 'https://repo.papermc.io/repository/maven-public/'
+-        content {
+-            includeModule("io.papermc.paper", "paper-api")
+-            includeModule("io.papermc", "paperlib")
+-            includeModule("net.md-5", "bungeecord-chat")
+-            includeGroup("io.papermc.adventure")
+-        }
++        name = "spigotmc-repo"
++        url = "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"
+     }
+-
+     maven {
+-        name = 'minecraft'
+-        url = 'https://libraries.minecraft.net'
+-        content {
+-            includeModule("com.mojang", "brigadier")
+-        }
++        name = "sonatype"
++        url = "https://oss.sonatype.org/content/groups/public/"
+     }
+-
+-    mavenCentral()
+ }
+ 
+ dependencies {
+-    compileOnly 'io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT'
+-    compileOnly 'com.github.spotbugs:spotbugs-annotations:4.9.8'
+-    implementation 'io.papermc:paperlib:1.0.8'
+-    spotbugsPlugins 'com.h3xstream.findsecbugs:findsecbugs-plugin:1.14.0'
+-    testCompileOnly 'com.github.spotbugs:spotbugs-annotations:4.9.8'
+-    testImplementation 'io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT'
+-    testImplementation 'org.junit.jupiter:junit-jupiter:6.0.3'
+-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher:6.0.3'
+-}
+-
+-test {
+-    useJUnitPlatform()
+-}
+-
+-processResources {
+-    filesMatching("**/plugin.yml") {
+-        expand ( NAME: rootProject.name, VERSION: version, PACKAGE: rootProject.group.toString() )
+-    }
+-}
+-
+-checkstyle {
+-    toolVersion = '12.3.0'
+-    maxWarnings = 0
+-}
+-
+-configurations.checkstyle {
+-    resolutionStrategy.capabilitiesResolution.withCapability("com.google.collections:google-collections") {
+-        select("com.google.guava:guava:23.0")
+-    }
+-}
+-
+-tasks.withType(Checkstyle).configureEach {
+-    reports {
+-        xml.required = false
+-        html.required = true
+-    }
++    compileOnly "org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT"
+ }
+ 
+-tasks.withType(SpotBugsTask).configureEach {
+-    reports.create("html") {
+-        required = true
+-    }
+-    reports.create("xml") {
+-        required = false
+-    }
++java {
++    sourceCompatibility = JavaVersion.VERSION_1_8
++    targetCompatibility = JavaVersion.VERSION_1_8
+ }
+ 
+-shadowJar {
+-    archiveClassifier.set('')
+-    relocate 'io.papermc.lib', 'shadow.io.papermc.paperlib'
+-    minimize()
++tasks.runServer {
++    minecraftVersion("1.12.2")
+ }
+ 
+-// Disable jar and replace with shadowJar
+-jar.enabled = false
+-assemble.dependsOn(shadowJar)
+-
+-tasks.register('printProjectName') {
+-    doLast {
+-        println rootProject.name
+-    }
+-}
+-
+-tasks.register('release') {
+-    dependsOn build
+-
+-    doLast {
+-        if (!version.endsWith("-SNAPSHOT")) {
+-            // Rename final JAR to trim off version information
+-            shadowJar.archiveFile.get().getAsFile()
+-                    .renameTo(layout.buildDirectory.get().toString() + File.separator + 'libs' + File.separator
+-                            + rootProject.name + '.jar')
+-        }
++processResources {
++    def props = [version: version]
++    inputs.properties props
++    filteringCharset 'UTF-8'
++    filesMatching('plugin.yml') {
++        expand props
+     }
+ }
+diff --git a/settings.gradle b/settings.gradle
+index 1cd81f0..3f67f24 100644
+--- a/settings.gradle
++++ b/settings.gradle
+@@ -1 +1,7 @@
+-rootProject.name = 'ExamplePlugin'
+\ No newline at end of file
++pluginManagement {
++    repositories {
++        gradlePluginPortal()
++    }
++}
++
++rootProject.name = 'ServerSleep'
+diff --git a/src/main/java/com/crimsonwarpedcraft/exampleplugin/ExamplePlugin.java b/src/main/java/com/crimsonwarpedcraft/exampleplugin/ExamplePlugin.java
+deleted file mode 100644
+index e63d5aa..0000000
+--- a/src/main/java/com/crimsonwarpedcraft/exampleplugin/ExamplePlugin.java
++++ /dev/null
+@@ -1,19 +0,0 @@
+-package com.crimsonwarpedcraft.exampleplugin;
+-
+-import io.papermc.lib.PaperLib;
+-import org.bukkit.plugin.java.JavaPlugin;
+-
+-/**
+- * Created by Levi Muniz on 7/29/20.
+- *
+- * @author Copyright (c) Levi Muniz. All Rights Reserved.
+- */
+-public class ExamplePlugin extends JavaPlugin {
+-
+-  @Override
+-  public void onEnable() {
+-    PaperLib.suggestPaper(this);
+-
+-    saveDefaultConfig();
+-  }
+-}
+diff --git a/src/main/resources/config.yml b/src/main/resources/config.yml
+index 6f98179..dc1e569 100644
+--- a/src/main/resources/config.yml
++++ b/src/main/resources/config.yml
+@@ -1 +1,6 @@
+-# A journey of 1,000 lines starts with a single char
+\ No newline at end of file
++# Percentage of non-spectator players that must be sleeping to skip the night.
++# Valid range: 0-100
++# 100 = all players must sleep (vanilla default)
++# 50  = half of players must sleep
++# 1   = a single player can skip the night
++sleep-percentage: 100
+diff --git a/src/main/resources/plugin.yml b/src/main/resources/plugin.yml
+index 3487125..8a57b96 100644
+--- a/src/main/resources/plugin.yml
++++ b/src/main/resources/plugin.yml
+@@ -1,20 +1,16 @@
+-main: ${PACKAGE}.${NAME}
+-name: ${NAME}
+-version: "${VERSION}"
+-api-version: "1.21.11"
+-author: AUTHOR
+-description: DESCRIPTION
++name: ServerSleep
++version: '${version}'
++main: com.loyal0713.serversleep.ServerSleep
++authors: [Loyal0713]
++api-version: '1.13'
++description: Allows configuring the percentage of players needed to sleep to skip the night
+ commands:
+-  ex:
+-    description: Base command for EXAMPLE
+-    usage: "For a list of commands, type /ex help"
+-    aliases: example
++  serversleep:
++    description: View or configure the sleep percentage
++    usage: /serversleep [percent <0-100>] [reload]
++    permission: serversleep.command
++    permission-message: You do not have permission to use this command!
+ permissions:
+-  example.test:
+-    description: DESCRIPTION
+-    default: true
+-  example.*:
+-    description: Grants all other permissions
+-    default: false
+-    children:
+-      example.test: true
+\ No newline at end of file
++  serversleep.command:
++    description: Allows use of the /serversleep command
++    default: op
+diff --git a/src/test/java/com/crimsonwarpedcraft/exampleplugin/ExamplePluginTest.java b/src/test/java/com/crimsonwarpedcraft/exampleplugin/ExamplePluginTest.java
+deleted file mode 100644
+index afcd2bb..0000000
+--- a/src/test/java/com/crimsonwarpedcraft/exampleplugin/ExamplePluginTest.java
++++ /dev/null
+@@ -1,16 +0,0 @@
+-package com.crimsonwarpedcraft.exampleplugin;
+-
+-import org.junit.jupiter.api.Test;
+-
+-/**
+- * Tests for ExamplePlugin.
+- *
+- * @author Copyright (c) Levi Muniz. All Rights Reserved.
+- */
+-public class ExamplePluginTest {
+-
+-  @Test
+-  public void onEnable() {
+-
+-  }
+-}
+\ No newline at end of file
+diff --git a/src/test/resources/.gitkeep b/src/test/resources/.gitkeep
+deleted file mode 100644
+index e69de29..0000000

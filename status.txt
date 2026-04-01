@@ -1,0 +1,14 @@
+ M .gitignore
+ D CODE_OF_CONDUCT.md
+ D CONTRIBUTING.md
+ D README.md
+ M build.gradle
+ M settings.gradle
+ D src/main/java/com/crimsonwarpedcraft/exampleplugin/ExamplePlugin.java
+ M src/main/resources/config.yml
+ M src/main/resources/plugin.yml
+ D src/test/java/com/crimsonwarpedcraft/exampleplugin/ExamplePluginTest.java
+ D src/test/resources/.gitkeep
+?? changes.diff
+?? src/main/java/com/loyal0713/
+?? status.txt
