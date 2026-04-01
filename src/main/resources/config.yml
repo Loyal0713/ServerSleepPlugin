@@ -1,0 +1,6 @@
+# Percentage of non-spectator players that must be sleeping to skip the night.
+# Valid range: 0-100
+# 100 = all players must sleep (vanilla default)
+# 50  = half of players must sleep
+# 1   = a single player can skip the night
+sleep-percentage: 100
